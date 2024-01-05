@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
+import img1 from './assets/imgs/produk-1.jpg'
+import img2 from './assets/imgs/produk-2.jpg'
+import img3 from './assets/imgs/produk-3.jpg'
 
 function MyCounter({ counter }) {
   return <span style={{ margin: 30 }}>{counter}</span>;
@@ -19,7 +22,7 @@ function Header_menu({ name }) {
 }
 
 function Homepage() {
-  const imagePath = "/produk1.jpg";
+  // const imagePath = "/produk1.jpg";
   const tags = ['Product', 'Electronics', 'Laptop'];
   const [counter, setCounter] = useState(0);
 
@@ -48,13 +51,13 @@ function Homepage() {
           <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="./produk-1.jpg" className="d-block w-100" alt="..." />
+                <img src={img1} className="d-block w-100" alt="..." />
               </div>
               <div className="carousel-item">
-                <img src="./produk-2.jpg" className="d-block w-100" alt="..." />
+                <img src={img2} className="d-block w-100" alt="..." />
               </div>
               <div className="carousel-item">
-                <img src="./produk-3.jpg" className="d-block w-100" alt="..." />
+                <img src={img3} className="d-block w-100" alt="..." />
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
