@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+pecel_lele.txt
 
 # testing
 /coverage
